@@ -55,7 +55,7 @@ See also:
 
 
 ## How to get Sentinel-2 data
-1. Register at Copernicus [Open Access Hub](https://scihub.copernicus.eu/dhus/#/home) or [EarthExplorer](https://earthexplorer.usgs.gov/)]
+1. Register at Copernicus [Open Access Hub](https://scihub.copernicus.eu/dhus/#/home) or [EarthExplorer](https://earthexplorer.usgs.gov/)
 2. Find your region
 3. Choose tile(s) (→ area) and date
     * Less tiles makes things easier
