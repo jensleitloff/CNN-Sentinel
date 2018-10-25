@@ -8,21 +8,21 @@
   * [Datasets](#datasets)
 
 ## Scripts you will find here
-* `01\_split\_data\_to\_train\_and\_validation.py`: split complete dataset into train and validation
-* `02\_train\_rgb\_finetuning.py`: train VGG16 or DenseNet201 using RGB data with pretrained weights on ImageNet
-* `03\_train\_rgb\_from\_scratch.py`: train VGG16 or DenseNet201 from scratch using RGB data 
-* `04\_train\_ms\_finetuning.py`: train VGG16 or DenseNet201 using multisprectral data with pretrained weights on ImageNet
-* `04\_train\_ms\_finetuning\_alternative.py`: an alternative way to train VGG16 or DenseNet201 using multisprectral data with pretrained weights on ImageNet
-* `05\_train\_ms\_from\_scratch.py`: train VGG16 or DenseNet201 from scratch using multisprectral data
-* `06\_classify\_image.py`: a simple implementation to classify images with trained models
-* `image\_functions.py`: functions for image normalization and a simple generator for training data augmentation
+* `01_split_data_to_train_and_validation.py`: split complete dataset into train and validation
+* `02_train_rgb_finetuning.py`: train VGG16 or DenseNet201 using RGB data with pretrained weights on ImageNet
+* `03_train_rgb_from_scratch.py`: train VGG16 or DenseNet201 from scratch using RGB data 
+* `04_train_ms_finetuning.py`: train VGG16 or DenseNet201 using multisprectral data with pretrained weights on ImageNet
+* `04_train_ms_finetuning_alternative.py`: an alternative way to train VGG16 or DenseNet201 using multisprectral data with pretrained weights on ImageNet
+* `05_train_ms_from_scratch.py`: train VGG16 or DenseNet201 from scratch using multisprectral data
+* `06_classify_image.py`: a simple implementation to classify images with trained models
+* `image_functions.py`: functions for image normalization and a simple generator for training data augmentation
 * `statistics.py`: a simple implementation to calculate mormalization parameters (i.e. mean and std of training data)
 
 Addtionally you will find the following notebooks:
 
-* `Image\_functions.ipynb`: notebook of image\_functions.py
-* `Train\_from\_Scratch.ipynb`: notebook of 05\_train\_ms\_from\_scratch.py
-* `Transfer\_learning.ipynb`: notebook of 02\_train\_rgb\_finetuning.py
+* `Image_functions.ipynb`: notebook of `image_functions.py`
+* `Train_from_Scratch.ipynb`: notebook of `05_train_ms_from_scratch.py`
+* `Transfer_learning.ipynb`: notebook of `02_train_rgb_finetuning.py`
 
 ## Requirements (what we used):
 - python 3.6.6
@@ -55,7 +55,7 @@ See also:
 
 
 ## How to get Sentinel-2 data
-1. Register at Copernicus [Open Access Hub](https://scihub.copernicus.eu/dhus/#/home) or [EarthExplorer[(https://earthexplorer.usgs.gov/)]
+1. Register at Copernicus [Open Access Hub](https://scihub.copernicus.eu/dhus/#/home) or [EarthExplorer](https://earthexplorer.usgs.gov/)]
 2. Find your region
 3. Choose tile(s) (→ area) and date
     * Less tiles makes things easier
@@ -71,7 +71,7 @@ See also:
 ## Datasets
 
 **This talk:**
-* EuroSAT Data ([Link](http://madm.dfki.de/downloads))
+* EuroSAT Data (Sentinel-2, [Link](http://madm.dfki.de/downloads))
 
 
 **Platforms for datasets:**
