@@ -82,10 +82,15 @@ See also:
 
 **Datasets:**
 
+- ISPRS 2D labeling challenge ([Link](http://www2.isprs.org/commissions/comm3/wg4/semantic-labeling.html))
 - UC Merced Land Use Dataset ([Link](http://weegee.vision.ucmerced.edu/datasets/landuse.html))
 - AID: A Benchmark Dataset for Performance Evaluation of Aerial Scene Classification ([Link](https://captain-whu.github.io/AID/))
 - NWPU-RESISC45 (RGB, [Link](http://www.escience.cn/people/JunweiHan/NWPU-RESISC45.html))
 - Zurich Summer Dataset (RGB, [Link](https://sites.google.com/site/michelevolpiresearch/data/zurich-dataset))
 
+**Image Segmentation Resources:**
+
+- Great link collection of image segmantation networks and datasets ([Link](https://github.com/mrgloom/awesome-semantic-segmentation))
+- Free land use vector data of NRW ([BasisDLM](https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/landschaftsmodelle/basis_dlm/index.html)) and ([openNRW](https://open.nrw/en/node/154))
 
 
