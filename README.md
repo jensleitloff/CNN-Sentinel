@@ -3,7 +3,6 @@
   * [Scripts you will find here](#scripts-you-will-find-here)
   * [Requirements (what we used):](#requirements--what-we-used--)
   * [Setup Environment](#setup-environment)
-  * [Links](#links)
   * [How to get Sentinel-2 data](#how-to-get-sentinel-2-data)
   * [Datasets](#datasets)
 
@@ -50,9 +49,6 @@ pip install keras
 See also:
 * Keras: https://keras.io/
 
-## Links
-* DeepHyperX - Deep learning for Hyperspectral imagery: https://gitlab.inria.fr/naudeber/DeepHyperX/
-
 
 ## How to get Sentinel-2 data
 1. Register at Copernicus [Open Access Hub](https://scihub.copernicus.eu/dhus/#/home) or [EarthExplorer](https://earthexplorer.usgs.gov/)
@@ -68,7 +64,7 @@ See also:
 6. Have fun with the data
 
 
-## Datasets
+## Resources
 
 **This talk:**
 * EuroSAT Data (Sentinel-2, [Link](http://madm.dfki.de/downloads))
@@ -93,4 +89,6 @@ See also:
 - Great link collection of image segmantation networks and datasets ([Link](https://github.com/mrgloom/awesome-semantic-segmentation))
 - Free land use vector data of NRW ([BasisDLM](https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/landschaftsmodelle/basis_dlm/index.html) or [openNRW](https://open.nrw/en/node/154))
 
+**Other:**
+* DeepHyperX - Deep learning for Hyperspectral imagery: https://gitlab.inria.fr/naudeber/DeepHyperX/
 
