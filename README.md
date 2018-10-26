@@ -91,6 +91,6 @@ See also:
 **Image Segmentation Resources:**
 
 - Great link collection of image segmantation networks and datasets ([Link](https://github.com/mrgloom/awesome-semantic-segmentation))
-- Free land use vector data of NRW ([BasisDLM](https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/landschaftsmodelle/basis_dlm/index.html) or ([openNRW](https://open.nrw/en/node/154))
+- Free land use vector data of NRW ([BasisDLM](https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/landschaftsmodelle/basis_dlm/index.html) or [openNRW](https://open.nrw/en/node/154))
 
 
