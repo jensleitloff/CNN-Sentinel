@@ -1,5 +1,8 @@
 # Satellite data is for everyone: insights into modern remote sensing research with open data and Python
 
+Video of the talk: https://www.youtube.com/watch?v=tKRoMcBeWjQ
+
+Outline:
   * [Scripts you will find here](#scripts-you-will-find-here)
   * [Requirements (what we used):](#requirements--what-we-used--)
   * [Setup Environment](#setup-environment)
