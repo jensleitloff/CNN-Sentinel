@@ -86,9 +86,11 @@ See also:
 - AID: A Benchmark Dataset for Performance Evaluation of Aerial Scene Classification ([Link](https://captain-whu.github.io/AID/))
 - NWPU-RESISC45 (RGB, [Link](http://www.escience.cn/people/JunweiHan/NWPU-RESISC45.html))
 - Zurich Summer Dataset (RGB, [Link](https://sites.google.com/site/michelevolpiresearch/data/zurich-dataset))
+- **Note**: Many German state authorities offer free geodata (high resolution images, land use/cover vector data, ...) over their geoportals. You can find an overview of all geoportals here ([geoportals](https://www.geoportal.nrw/geoportale-bundeslaender_nachbarstaaten))
 
 **Image Segmentation Resources:**
 
+- Image segmentation with Keras including pretrained weights ([Keras-FCN](https://github.com/aurora95/Keras-FCN))
 - Great link collection of image segmantation networks and datasets ([Link](https://github.com/mrgloom/awesome-semantic-segmentation))
 - Free land use vector data of NRW ([BasisDLM](https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/landschaftsmodelle/basis_dlm/index.html) or [openNRW](https://open.nrw/en/node/154))
 
