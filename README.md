@@ -78,11 +78,12 @@ See also:
 
 ### M3 Minds mastering machines 2019 @ Mannheim
 
-* Title: "Satellite Computer Vision mit Keras und Tensorflow - Best practices und beispiele aus der Forschung"
-* Language: German
-* Date: 14 - 16 May 2019
-* URL: [m3-konferenz.de](https://www.m3-konferenz.de)
-* Abstract:
+* **Title:** "Satellite Computer Vision mit Keras und Tensorflow - Best practices und beispiele aus der Forschung"
+* Slides (coming soon)
+* **Language:** German
+* **Date:** 14 - 16 May 2019
+* **URL:** [m3-konferenz.de](https://www.m3-konferenz.de)
+* **Abstract:**
 
 > Im Forschungsfeld des Maschinellen Lernens werden zunehmend leicht zugängliche Framework wie Keras, Tensorflow oder Pytorch verwendet. Hierdurch ist ein Austausch und die Wiederverwendung bestehender (trainierter) neuronaler Netze möglich.
 >
@@ -97,12 +98,13 @@ See also:
 
 ### PyCon.DE 2018 @ Karlsruhe
 
-* Title: "Satellite data is for everyone: insights into modern remote sensing research with open data and Python"
-* Video: [youtube.com/watch?v=tKRoMcBeWjQ](https://www.youtube.com/watch?v=tKRoMcBeWjQ)
-* Language: English
-* Date: 24 - 28 October 2018
-* URL: [de.pycon.org](https://de.pycon.org)
-* Abstract:
+* **Title:** "Satellite data is for everyone: insights into modern remote sensing research with open data and Python"
+* **Slides:** [Slides](slides/PyCon2018_LeitloffRiese_SatelliteData.pdf)
+* **Video:** [youtube.com/watch?v=tKRoMcBeWjQ](https://www.youtube.com/watch?v=tKRoMcBeWjQ)
+* **Language:** English
+* **Date:** 24 - 28 October 2018
+* **URL:** [de.pycon.org](https://de.pycon.org)
+* **Abstract:**
 
 > The largest earth observation programme Copernicus (http://copernicus.eu) makes it possible to perform terrestrial observations providing data for all kinds of purposes. One important objective is to monitor the land-use and land-cover changes with the Sentinel-2 satellite mission. These satellites measure the sun reflectance on the earth surface with multispectral cameras (13 channels between 440 nm to 2190 nm). Machine learning techniques like convolutional neural networks (CNN) are able to learn the link between the satellite image (spectrum) and the ground truth (land use class). In this talk, we give an overview about the state-of-the-art land-use classification with CNNs based on an open dataset.
 >
