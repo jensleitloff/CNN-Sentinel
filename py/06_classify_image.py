@@ -40,6 +40,17 @@ _, output_classes = model.layers[-1].output_shape
 in_rows_half = int(input_rows/2)
 in_cols_half = int(input_cols/2)
 
+# import correct preprocessing
+if input_channels is 3:
+    from image_functions import preprocessing_image_rgb as preprocessing_image
+else:
+    from image_functions import preprocessing_image_ms as preprocessing_image
+
+# pad image
+image = pad(image, ((input_rows, input_rows),
+                    (input_cols, input_cols),
+                    (0, 0)), 'symmetric')
+
 # don't forget to preprocess
 image = preprocessing_image(image)
 num_rows, num_cols, _ = image.shape
