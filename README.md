@@ -9,7 +9,7 @@ Overview about state-of-the-art land-use classification from satellite data with
 * [Setup Environment](#setup-environment)
 * [How to get Sentinel-2 data](#how-to-get-sentinel-2-data)
 * [Our talks about this topic](#our-talks-about-this-topic)
-* [Datasets](#datasets)
+* [Resources](#resources)
 
 ## Scripts you will find here
 
