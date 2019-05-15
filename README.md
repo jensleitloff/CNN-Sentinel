@@ -7,9 +7,9 @@ Overview about state-of-the-art land-use classification from satellite data with
 * [Scripts you will find here](#scripts-you-will-find-here)
 * [Requirements (what we used):](#requirements--what-we-used--)
 * [Setup Environment](#setup-environment)
-* [How to get Sentinel-2 data](#how-to-get-sentinel-2-data)
 * [Our talks about this topic](#our-talks-about-this-topic)
 * [Resources](#resources)
+* [How to get Sentinel-2 data](#how-to-get-sentinel-2-data)
 
 ## Scripts you will find here
 
@@ -60,28 +60,14 @@ See also:
 
 * [Keras](https://keras.io/)
 
-## How to get Sentinel-2 data
-
-1. Register at Copernicus [Open Access Hub](https://scihub.copernicus.eu/dhus/#/home) or [EarthExplorer](https://earthexplorer.usgs.gov/)
-2. Find your region
-3. Choose tile(s) (→ area) and date
-    * Less tiles makes things easier
-    * Less clouds in the image are better
-    * Consider multiple dates for classes like “annual crop”
-4. Download L1C data
-5. Decide of you want to apply L2A atmospheric corrections
-    * Your CNN might be able to do this by itself
-    * If you want to correct, use [Sen2Cor](http://step.esa.int/main/third-party-plugins-2/sen2cor/)
-6. Have fun with the data
-
 ## Our talks about this topic
 
 ### M3 Minds mastering machines 2019 @ Mannheim
 
 * **Title:** "Satellite Computer Vision mit Keras und Tensorflow - Best practices und beispiele aus der Forschung"
-* Slides (coming soon)
+* **Slides:** [Slides](slides/M3-2019_RieseLeitloff_SatelliteCV.pdf)
 * **Language:** German
-* **Date:** 14 - 16 May 2019
+* **Date:** 15 - 16 May 2019
 * **URL:** [m3-konferenz.de](https://www.m3-konferenz.de)
 * **Abstract:**
 
@@ -139,3 +125,17 @@ See also:
 **Other:**
 
 * DeepHyperX - Deep learning for Hyperspectral imagery: [gitlab.inria.fr/naudeber/DeepHyperX/](https://gitlab.inria.fr/naudeber/DeepHyperX/)
+
+## How to get Sentinel-2 data
+
+1. Register at Copernicus [Open Access Hub](https://scihub.copernicus.eu/dhus/#/home) or [EarthExplorer](https://earthexplorer.usgs.gov/)
+2. Find your region
+3. Choose tile(s) (→ area) and date
+    * Less tiles makes things easier
+    * Less clouds in the image are better
+    * Consider multiple dates for classes like “annual crop”
+4. Download L1C data
+5. Decide of you want to apply L2A atmospheric corrections
+    * Your CNN might be able to do this by itself
+    * If you want to correct, use [Sen2Cor](http://step.esa.int/main/third-party-plugins-2/sen2cor/)
+6. Have fun with the data
