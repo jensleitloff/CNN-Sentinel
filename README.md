@@ -114,7 +114,7 @@ See also:
 * AID: A Benchmark Dataset for Performance Evaluation of Aerial Scene Classification ([Link](https://captain-whu.github.io/AID/))
 * NWPU-RESISC45 (RGB, [Link](http://www.escience.cn/people/JunweiHan/NWPU-RESISC45.html))
 * Zurich Summer Dataset (RGB, [Link](https://sites.google.com/site/michelevolpiresearch/data/zurich-dataset))
-* **Note**: Many German state authorities offer free geodata (high resolution images, land use/cover vector data, ...) over their geoportals. You can find an overview of all geoportals here ([geoportals](https://www.geoportal.nrw/geoportale-bundeslaender_nachbarstaaten))
+* **Note**: Many German state authorities offer free geodata (high resolution images, land use/cover vector data, ...) over their geoportals. You can find an overview of all geoportals here ([geoportals](https://www.geoportal.nrw/geoportale_bundeslaender_nachbarstaaten))
 
 **Image Segmentation Resources:**
 
