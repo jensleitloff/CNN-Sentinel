@@ -1,4 +1,5 @@
 [![DOI](https://zenodo.org/badge/154472226.svg)](https://zenodo.org/badge/latestdoi/154472226)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 # Analyzing Sentinel-2 satellite data in Python with Keras and TensorFlow
 
