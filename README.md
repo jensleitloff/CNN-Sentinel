@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/154472226.svg)](https://zenodo.org/badge/latestdoi/154472226)
+
 # Analyzing Sentinel-2 satellite data in Python with Keras and TensorFlow
 
 Overview about state-of-the-art land-use classification from satellite data with CNNs based on an open dataset
