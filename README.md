@@ -121,7 +121,8 @@ See also:
 
 **Image Segmentation Resources:**
 
-* Image segmentation with Keras including pretrained weights ([Keras-FCN](https://github.com/aurora95/Keras-FCN))
+* More than 100 combinations for image segmentation routines with Keras and pretrained weights for endcoding phase ([Segmentation Models](https://github.com/qubvel/segmentation_models))
+* Another source for image segmentation with Keras including pretrained weights ([Keras-FCN](https://github.com/aurora95/Keras-FCN))
 * Great link collection of image segmantation networks and datasets ([Link](https://github.com/mrgloom/awesome-semantic-segmentation))
 * Free land use vector data of NRW ([BasisDLM](https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/landschaftsmodelle/basis_dlm/index.html) or [openNRW](https://open.nrw/en/node/154))
 
