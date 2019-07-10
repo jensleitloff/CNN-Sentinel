@@ -65,6 +65,14 @@ See also:
 
 ## Our talks about this topic
 
+### Podcast episode @ InoTecCast
+
+* **Title:** "Fernerkundung mit multispektralen Satellitenbildern"
+* **Episode:** [Episode 18](https://inoteccast.de/18-fernerkundung-mit-multispektralen-satellitenbildern/)
+* **Podcast:** [InoTecCast](https://inoteccast.de)
+* **Language:** German
+* **Date:** July 2019
+
 ### M3 Minds mastering machines 2019 @ Mannheim
 
 * **Title:** "Satellite Computer Vision mit Keras und Tensorflow - Best practices und beispiele aus der Forschung"
