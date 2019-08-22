@@ -68,8 +68,8 @@ See also:
 ### Podcast episode @ InoTecCast
 
 * **Title:** "Fernerkundung mit multispektralen Satellitenbildern"
-* **Episode:** [Episode 18](https://inoteccast.de/18-fernerkundung-mit-multispektralen-satellitenbildern/)
-* **Podcast:** [InoTecCast](https://inoteccast.de)
+* **Episode:** [Episode 18](https://techtiefen.de/18-fernerkundung-mit-multispektralen-satellitenbildern/)
+* **Podcast:** [TechTiefen](https://techtiefen.de)
 * **Language:** German
 * **Date:** July 2019
 
