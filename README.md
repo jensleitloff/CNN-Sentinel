@@ -13,6 +13,7 @@ Overview about state-of-the-art land-use classification from satellite data with
 * [Our talks about this topic](#our-talks-about-this-topic)
 * [Resources](#resources)
 * [How to get Sentinel-2 data](#how-to-get-sentinel-2-data)
+* [Citation](#citation)
 
 ## Scripts you will find here
 
@@ -151,3 +152,18 @@ See also:
     * Your CNN might be able to do this by itself
     * If you want to correct, use [Sen2Cor](http://step.esa.int/main/third-party-plugins-2/sen2cor/)
 6. Have fun with the data
+
+## Citation
+
+Jens Leitloff and Felix M. Riese, "Examples for CNN training and classification on Sentinel-2 data", Zenodo, [10.5281/zenodo.3268451](http://doi.org/10.5281/zenodo.3268451), 2018.
+
+```tex
+@misc{leitloff2018examples,
+    author = {Leitloff, Jens and Riese, Felix~M.},
+    title = {{Examples for CNN training and classification on Sentinel-2 data}},
+    year = {2018},
+    DOI = {10.5281/zenodo.3268451},
+    publisher = {Zenodo},
+    howpublished = {\href{http://doi.org/10.5281/zenodo.3268451}{http://doi.org/10.5281/zenodo.3268451}}
+}
+```
