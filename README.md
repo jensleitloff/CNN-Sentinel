@@ -66,23 +66,27 @@ See also:
 
 ## Our talks about this topic
 
-### Podcast episode @ InoTecCast
+### Podcast episode @ TechTiefen
 
 * **Title:** "Fernerkundung mit multispektralen Satellitenbildern"
 * **Episode:** [Episode 18](https://techtiefen.de/18-fernerkundung-mit-multispektralen-satellitenbildern/)
-* **Podcast:** [TechTiefen](https://techtiefen.de)
-* **Language:** German
+* **Podcast:** [TechTiefen](https://techtiefen.de) by Nico Kreiling
+* **Language:** German (Deutsch)
 * **Date:** July 2019
+
+<details><summary>Abstract</summary>
+ Jens Leitloff und Felix Riese berichten in Folge 18 von ihrer Forschung am “Institut für Photogrammetrie und Fernerkundung” des Karlsruher Instituts für Technologie. Mit der Bestrebung Nachhaltigkeit zu stärken erforschen die beiden etwa Verfahren, um Wasserqualität anhand von Satellitenaufnahmen zu bewerten oder die Nutzung landwirtschaftlicher Flächen zu kartografieren. Hierfür kommen unterschiedlichste Verfahren zum Einsatz wie Radaraufnahmen oder multispektrale Bilderdaten, die mehr als die drei von Menschen wahrnehmbaren Farbkanäle erfassen. Außerdem geht es um Drohnen, Satelliten und zahlreiche ML-Verfahren wie Transfer- und Aktive Learning. Persönliche Erfahrungen von Jens und Felix im Umgang mit unterschiedlichen Datenmengen runden eine thematisch Breite und anschauliche Folge ab.
+</details>
 
 ### M3 Minds mastering machines 2019 @ Mannheim
 
 * **Title:** "Satellite Computer Vision mit Keras und Tensorflow - Best practices und beispiele aus der Forschung"
 * **Slides:** [Slides](slides/M3-2019_RieseLeitloff_SatelliteCV.pdf)
-* **Language:** German
+* **Language:** German (Deutsch)
 * **Date:** 15 - 16 May 2019
-* **URL:** [m3-konferenz.de](https://www.m3-konferenz.de)
-* **Abstract:**
+* **URL:** [m3-konferenz.de](https://m3-konferenz.de/2019/)
 
+<details><summary>Abstract</summary>
 > Im Forschungsfeld des Maschinellen Lernens werden zunehmend leicht zugängliche Framework wie Keras, Tensorflow oder Pytorch verwendet. Hierdurch ist ein Austausch und die Wiederverwendung bestehender (trainierter) neuronaler Netze möglich.
 >
 > Wir am Institut für Photogrammetrie und Fernerkundung (IPF) des Karlsruher Institut für Technologie (KIT) beschäftigen uns unter anderem mit der Analyse von optischen Satellitendaten. Satellitenprogramme wie Sentinel-2 von Copernicus liefern wöchentliche, weltweite und dabei frei zugängliche multispektrale Bilder, die eine Vielzahl neuartiger Anwendungen ermöglichen. Wir nehmen das zum Anlass, eine interaktive Einführung in die Auswertung dieser Satellitendaten mit Learnings aus unserer täglichen Forschung zu geben. Wir sprechen unter anderem über die folgenden Themen:
@@ -93,6 +97,7 @@ See also:
 > * Anschauliche Interpretation von Klassifikationsergebnissen
 > * Best Practices aus unserer Forschung, die die Arbeit mit Neuronalen Netzen wesentlich vereinfachen und beschleunigen
 > * Code und Daten für die ersten Schritte mit CNNs mit Keras in Python, welche in einem GitHub Repository zur Verfügung gestellt werden
+</details>
 
 ### PyCon.DE 2018 @ Karlsruhe
 
@@ -102,11 +107,12 @@ See also:
 * **Language:** English
 * **Date:** 24 - 28 October 2018
 * **URL:** [de.pycon.org](https://de.pycon.org)
-* **Abstract:**
 
+<details><summary>Abstract</summary>
 > The largest earth observation programme Copernicus (http://copernicus.eu) makes it possible to perform terrestrial observations providing data for all kinds of purposes. One important objective is to monitor the land-use and land-cover changes with the Sentinel-2 satellite mission. These satellites measure the sun reflectance on the earth surface with multispectral cameras (13 channels between 440 nm to 2190 nm). Machine learning techniques like convolutional neural networks (CNN) are able to learn the link between the satellite image (spectrum) and the ground truth (land use class). In this talk, we give an overview about the state-of-the-art land-use classification with CNNs based on an open dataset.
 >
 > We use different out-of-box CNNs for the Keras deep learning library (https://keras.io/). All networks are either included in Keras itself or are available from Github repositories. We show the process of transfer learning for the RGB datasets. Furthermore, the minimal changes required to apply commonly used CNNs to multispectral data are demonstrated. Thus, the interested audience will be able to perform their own classification of remote sensing data within a very short time. Results of different network structures are visually compared. Especially the differences of transfer learning and learning from scratch are demonstrated. This also includes the amount of necessary training epochs, progress of training and validation error and visual comparison of the results of the trained networks. Finally, we give a quick overview about the current research topics including recurrent neural networks for spatio-temporal land-use classification and further applications of multi- and hyperspectral data, e.g. for the estimation of water parameters and soil characteristics.
+</details>
 
 ## Resources
 
