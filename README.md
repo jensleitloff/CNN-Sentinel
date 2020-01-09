@@ -1,5 +1,6 @@
 [![DOI](https://zenodo.org/badge/154472226.svg)](https://zenodo.org/badge/latestdoi/154472226)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a6b8568aab8c4c319a4f58d84cccf7c0)](https://www.codacy.com/manual/jensleitloff/CNN-Sentinel?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jensleitloff/CNN-Sentinel&amp;utm_campaign=Badge_Grade)
 
 # Analyzing Sentinel-2 satellite data in Python with Keras and TensorFlow
 
