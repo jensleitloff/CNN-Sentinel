@@ -30,16 +30,6 @@ _, output_classes = model.layers[-1].output_shape
 in_rows_half = int(input_rows/2)
 in_cols_half = int(input_cols/2)
 
-# read image and model
-image = np.array(imread(path_to_image), dtype=float)
-_, num_cols_unpadded, _ = image.shape
-model = load_model(path_to_model)
-# get input shape of model
-_, input_rows, input_cols, input_channels = model.layers[0].input_shape
-_, output_classes = model.layers[-1].output_shape
-in_rows_half = int(input_rows/2)
-in_cols_half = int(input_cols/2)
-
 # import correct preprocessing
 if input_channels is 3:
     from image_functions import preprocessing_image_rgb as preprocessing_image
