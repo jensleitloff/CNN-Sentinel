@@ -1,0 +1,5 @@
+tensorflow>=2.0.0
+skimage>=0.14.1
+gdal==2.2.4
+tqdm>=4.0.0
+numpy>=1.17.4

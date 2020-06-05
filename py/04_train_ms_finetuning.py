@@ -1,19 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PyCon 2018:
-Satellite data is for everyone: insights into modern remote sensing research
-with open data and Python
+Code for the PyCon.DE 2018 talk by Jens Leitloff and Felix M. Riese.
+
+PyCon 2018 talk: Satellite data is for everyone: insights into modern remote
+sensing research with open data and Python.
+
+License: MIT
 
 """
 import os
 from glob import glob
-from keras.applications.vgg16 import VGG16 as VGG
-from keras.applications.densenet import DenseNet201 as DenseNet
-from keras.optimizers import SGD
-from keras.layers import GlobalAveragePooling2D, Dense, Input, Conv2D
-from keras.models import Model
-from keras.callbacks import ModelCheckpoint, EarlyStopping
+
+from tensorflow.keras.applications.densenet import DenseNet201 as DenseNet
+from tensorflow.keras.applications.vgg16 import VGG16 as VGG
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from tensorflow.keras.layers import (Conv2D, Dense, GlobalAveragePooling2D,
+                                     Input)
+from tensorflow.keras.models import Model
+from tensorflow.keras.optimizers import SGD
+
 from image_functions import simple_image_generator
 
 # variables
@@ -103,7 +109,7 @@ for layer in base_model.layers:
     layer.trainable = False
 # set convolution block for reducing 13 to 3 layers trainable
 for layer in model.layers[:2]:
-        layer.trainable = True
+    layer.trainable = True
 
 # compile the model (should be done *after* setting layers to non-trainable)
 model.compile(optimizer='adam', loss='categorical_crossentropy',

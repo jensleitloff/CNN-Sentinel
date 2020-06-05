@@ -1,18 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PyCon 2018:
-Satellite data is for everyone: insights into modern remote sensing research
-with open data and Python
+Code for the PyCon.DE 2018 talk by Jens Leitloff and Felix M. Riese.
+
+PyCon 2018 talk: Satellite data is for everyone: insights into modern remote
+sensing research with open data and Python.
+
+License: MIT
 
 """
 import os
 from glob import glob
-from keras.applications.vgg16 import VGG16 as VGG
-from keras.applications.densenet import DenseNet201 as DenseNet
-from keras.layers import GlobalAveragePooling2D, Dense
-from keras.models import Model
-from keras.callbacks import ModelCheckpoint, EarlyStopping
+
+from tensorflow.keras.applications.densenet import DenseNet201 as DenseNet
+from tensorflow.keras.applications.vgg16 import VGG16 as VGG
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D
+from tensorflow.keras.models import Model
+
 from image_functions import simple_image_generator
 
 # variables

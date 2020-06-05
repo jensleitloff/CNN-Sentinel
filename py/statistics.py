@@ -3,9 +3,11 @@
 """Some statistics about the EuroSAT dataset."""
 
 import glob
-from osgeo import gdal
-import numpy as np
 import os
+
+import numpy as np
+from osgeo import gdal
+
 
 def getMeanStd(path, n_bands=3, n_max=-1):
     """Get mean and standard deviation from images.
@@ -26,7 +28,7 @@ def getMeanStd(path, n_bands=3, n_max=-1):
     if not os.path.isdir(path):
         print("Error: Directory does not exist.")
         return 0
-    
+
     mean_array = [[] for _ in range(n_bands)]
     std_array = [[] for _ in range(n_bands)]
 
@@ -54,7 +56,7 @@ def getMeanStd(path, n_bands=3, n_max=-1):
     for band in range(n_bands):
         print("{band:4d} | {mean:8.3f} | {std:8.3f}".format(
             band=band, mean=res_mean[band], std=res_std[band]))
-    
+
     return res_mean, res_std
 
 if __name__ == "__main__":

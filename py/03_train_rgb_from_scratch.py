@@ -1,18 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PyCon 2018:
-Satellite data is for everyone: insights into modern remote sensing research
-with open data and Python
+Code for the PyCon.DE 2018 talk by Jens Leitloff and Felix M. Riese.
+
+PyCon 2018 talk: Satellite data is for everyone: insights into modern remote
+sensing research with open data and Python.
+
+License: MIT
 
 """
 import os
-from keras.preprocessing.image import ImageDataGenerator
-from keras.applications.vgg16 import VGG16 as VGG
-from keras.applications.densenet import DenseNet201 as DenseNet
-from keras.layers import GlobalAveragePooling2D, Dense
-from keras.models import Model
-from keras.callbacks import ModelCheckpoint, EarlyStopping
+
+from tensorflow.keras.applications.densenet import DenseNet201 as DenseNet
+from tensorflow.keras.applications.vgg16 import VGG16 as VGG
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D
+from tensorflow.keras.models import Model
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
 from image_functions import preprocessing_image_rgb
 
 # variables
@@ -61,13 +66,17 @@ model.summary()
 
 # defining ImageDataGenerators
 # ... initialization for training
-train_datagen = ImageDataGenerator(fill_mode="reflect",
-                                   rotation_range=45,
-                                   horizontal_flip=True,
-                                   vertical_flip=True,
-                                   preprocessing_function=preprocessing_image_rgb)
+train_datagen = ImageDataGenerator(
+    fill_mode="reflect",
+    rotation_range=45,
+    horizontal_flip=True,
+    vertical_flip=True,
+    preprocessing_function=preprocessing_image_rgb)
+
 # ... initialization for validation
-test_datagen = ImageDataGenerator(preprocessing_function=preprocessing_image_rgb)
+test_datagen = ImageDataGenerator(
+    preprocessing_function=preprocessing_image_rgb)
+
 # ... definition for training
 train_generator = train_datagen.flow_from_directory(path_to_train,
                                                     target_size=(64, 64),
@@ -76,10 +85,11 @@ train_generator = train_datagen.flow_from_directory(path_to_train,
 print(train_generator.class_indices)
 
 # ... definition for validation
-validation_generator = test_datagen.flow_from_directory(path_to_validation,
-                                                        target_size=(64, 64),
-                                                        batch_size=batch_size,
-                                                        class_mode='categorical')
+validation_generator = test_datagen.flow_from_directory(
+    path_to_validation,
+    target_size=(64, 64),
+    batch_size=batch_size,
+    class_mode='categorical')
 
 # compile the model (should be done *after* setting layers to non-trainable)
 model.compile(optimizer='adadelta', loss='categorical_crossentropy',

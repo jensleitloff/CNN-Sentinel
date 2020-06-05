@@ -2,9 +2,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a6b8568aab8c4c319a4f58d84cccf7c0)](https://www.codacy.com/manual/jensleitloff/CNN-Sentinel?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jensleitloff/CNN-Sentinel&amp;utm_campaign=Badge_Grade)
 
-# Analyzing Sentinel-2 satellite data in Python with Keras and TensorFlow
+# Analyzing Sentinel-2 satellite data in Python with TensorFlow.Keras
 
-Overview about state-of-the-art land-use classification from satellite data with CNNs based on an open dataset
+Overview about state-of-the-art land-use classification from satellite data
+with CNNs based on an open dataset
 
 ## Outline
 
@@ -18,15 +19,24 @@ Overview about state-of-the-art land-use classification from satellite data with
 
 ## Scripts you will find here
 
-* `01_split_data_to_train_and_validation.py`: split complete dataset into train and validation
-* `02_train_rgb_finetuning.py`: train VGG16 or DenseNet201 using RGB data with pre-trained weights on ImageNet
-* `03_train_rgb_from_scratch.py`: train VGG16 or DenseNet201 from scratch using RGB data
-* `04_train_ms_finetuning.py`: train VGG16 or DenseNet201 using multisprectral data with pre-trained weights on ImageNet
-* `04_train_ms_finetuning_alternative.py`: an alternative way to train VGG16 or DenseNet201 using multisprectral data with pre-trained weights on ImageNet
-* `05_train_ms_from_scratch.py`: train VGG16 or DenseNet201 from scratch using multisprectral data
-* `06_classify_image.py`: a simple implementation to classify images with trained models
-* `image_functions.py`: functions for image normalization and a simple generator for training data augmentation
-* `statistics.py`: a simple implementation to calculate normalization parameters (i.e. mean and std of training data)
+* `01_split_data_to_train_and_validation.py`: split complete dataset into train
+  and validation
+* `02_train_rgb_finetuning.py`: train VGG16 or DenseNet201 using RGB data with
+  pre-trained weights on ImageNet
+* `03_train_rgb_from_scratch.py`: train VGG16 or DenseNet201 from scratch using
+  RGB data
+* `04_train_ms_finetuning.py`: train VGG16 or DenseNet201 using multisprectral
+  data with pre-trained weights on ImageNet
+* `04_train_ms_finetuning_alternative.py`: an alternative way to train VGG16 or
+  DenseNet201 using multisprectral data with pre-trained weights on ImageNet
+* `05_train_ms_from_scratch.py`: train VGG16 or DenseNet201 from scratch using
+  multisprectral data
+* `06_classify_image.py`: a simple implementation to classify images with
+  trained models
+* `image_functions.py`: functions for image normalization and a simple
+  generator for training data augmentation
+* `statistics.py`: a simple implementation to calculate normalization
+  parameters (i.e. mean and std of training data)
 
 Additionally you will find the following notebooks:
 
@@ -36,9 +46,11 @@ Additionally you will find the following notebooks:
 
 ## Requirements (what we used)
 
-* python 3.6.6
-* tensorflow-gpu (1.11) with Cuda Toolkit 9.0
-* keras (2.2.4)
+We have defined the requirements in [requirements.txt](requirements.txt).
+We used:
+
+* python 3.6.x
+* tensorflow 2.2
 * scikit-image (0.14.1)
 * gdal (2.2.4) for `06_classify_image.py`
 

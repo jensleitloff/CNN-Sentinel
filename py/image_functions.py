@@ -1,4 +1,13 @@
 # -*- coding: utf-8 -*-
+import os
+from random import choice, sample
+
+import numpy as np
+from skimage.io import imread
+from skimage.transform import rotate
+from tensorflow.keras.utils import to_categorical
+
+
 def preprocessing_image_rgb(x):
     # define mean and std values
     mean = [87.845, 96.965, 103.947]
@@ -24,8 +33,6 @@ def preprocessing_image_ms(x):
 
 
 def categorical_label_from_full_file_name(files, class_indices):
-    from keras.utils import to_categorical
-    import os
     # file basename without extension
     base_name = [os.path.splitext(os.path.basename(i))[0] for i in files]
     # class label from filename
@@ -39,10 +46,6 @@ def categorical_label_from_full_file_name(files, class_indices):
 def simple_image_generator(files, class_indices, batch_size=32,
                            rotation_range=0, horizontal_flip=False,
                            vertical_flip=False):
-    from skimage.io import imread
-    from skimage.transform import rotate
-    import numpy as np
-    from random import sample, choice
 
     while True:
         # select batch_size number of samples without replacement

@@ -1,20 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PyCon 2018:
-Satellite data is for everyone: insights into modern remote sensing research
-with open data and Python
+Code for the PyCon.DE 2018 talk by Jens Leitloff and Felix M. Riese.
+
+PyCon 2018 talk: Satellite data is for everyone: insights into modern remote
+sensing research with open data and Python.
+
+License: MIT
 
 """
 import os
-from keras.preprocessing.image import ImageDataGenerator
-from keras.applications.vgg16 import VGG16 as VGG
-from keras.applications.densenet import DenseNet201 as DenseNet
-from keras.optimizers import SGD
-from keras.layers import GlobalAveragePooling2D, Dense
-from keras.models import Model
-from keras.callbacks import ModelCheckpoint, EarlyStopping, TensorBoard
+
+from tensorflow.keras.applications.densenet import DenseNet201 as DenseNet
+from tensorflow.keras.applications.vgg16 import VGG16 as VGG
+from tensorflow.keras.callbacks import (EarlyStopping, ModelCheckpoint,
+                                        TensorBoard)
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D
+from tensorflow.keras.models import Model
+from tensorflow.keras.optimizers import SGD
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
 from image_functions import preprocessing_image_rgb
+
 
 # variables
 path_to_split_datasets = "~/Documents/Data/PyCon/RGB"
@@ -63,13 +70,17 @@ model.summary()
 
 # defining ImageDataGenerators
 # ... initialization for training
-train_datagen = ImageDataGenerator(fill_mode="reflect",
-                                   rotation_range=45,
-                                   horizontal_flip=True,
-                                   vertical_flip=True,
-                                   preprocessing_function=preprocessing_image_rgb)
+train_datagen = ImageDataGenerator(
+    fill_mode="reflect",
+    rotation_range=45,
+    horizontal_flip=True,
+    vertical_flip=True,
+    preprocessing_function=preprocessing_image_rgb)
+
 # ... initialization for validation
-test_datagen = ImageDataGenerator(preprocessing_function=preprocessing_image_rgb)
+test_datagen = ImageDataGenerator(
+    preprocessing_function=preprocessing_image_rgb)
+
 # ... definition for training
 train_generator = train_datagen.flow_from_directory(path_to_train,
                                                     target_size=(64, 64),
@@ -80,10 +91,11 @@ class_indices = train_generator.class_indices
 print(class_indices)
 
 # ... definition for validation
-validation_generator = test_datagen.flow_from_directory(path_to_validation,
-                                                        target_size=(64, 64),
-                                                        batch_size=batch_size,
-                                                        class_mode='categorical')
+validation_generator = test_datagen.flow_from_directory(
+    path_to_validation,
+    target_size=(64, 64),
+    batch_size=batch_size,
+    class_mode='categorical')
 
 # first: train only the top layers (which were randomly initialized)
 # i.e. freeze all convolutional layers
@@ -114,7 +126,7 @@ earlystopper = EarlyStopping(monitor='val_categorical_accuracy',
                              mode='max',
                              restore_best_weights=True)
 
-tensorboard = TensorBoard(log_dir='./logs', write_graph=True, write_grads=True,
+tensorboard = TensorBoard(log_dir='./logs', write_graph=True,
                           write_images=True, update_freq='epoch')
 
 history = model.fit_generator(train_generator,

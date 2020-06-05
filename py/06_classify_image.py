@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PyCon 2018:
-Satellite data is for everyone: insights into modern remote sensing research
-with open data and Python
+Code for the PyCon.DE 2018 talk by Jens Leitloff and Felix M. Riese.
+
+PyCon 2018 talk: Satellite data is for everyone: insights into modern remote
+sensing research with open data and Python.
+
+License: MIT
 
 """
+import gdal
 import numpy as np
 from skimage.io import imread
 from skimage.util import pad
-from keras.models import load_model
-import gdal
+from tensorflow.keras.models import load_model
 from tqdm import tqdm
+
 
 # input files
 path_to_image = "../data/karlsruhe/2018_zugeschnitten.tif"
