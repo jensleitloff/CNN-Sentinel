@@ -132,12 +132,13 @@ earlystopper = EarlyStopping(monitor='val_categorical_accuracy',
                              patience=10,
                              mode='max',
                              restore_best_weights=True)
-history = model.fit_generator(train_generator,
-                              steps_per_epoch=1000,
-                              epochs=10000,
-                              callbacks=[checkpointer, earlystopper],
-                              validation_data=validation_generator,
-                              validation_steps=500)
+history = model.fit(
+    train_generator,
+    steps_per_epoch=1000,
+    epochs=10000,
+    callbacks=[checkpointer, earlystopper],
+    validation_data=validation_generator,
+    validation_steps=500)
 initial_epoch = len(history.history['loss'])+1
 
 # at this point, the top layers are well trained and we can start fine-tuning
@@ -190,10 +191,11 @@ checkpointer = ModelCheckpoint("../data/models/" + file_name +
 earlystopper = EarlyStopping(monitor='val_categorical_accuracy',
                              patience=10,
                              mode='max')
-model.fit_generator(train_generator,
-                    steps_per_epoch=1000,
-                    epochs=10000,
-                    callbacks=[checkpointer, earlystopper],
-                    validation_data=validation_generator,
-                    validation_steps=500,
-                    initial_epoch=initial_epoch)
+model.fit(
+    train_generator,
+    steps_per_epoch=1000,
+    epochs=10000,
+    callbacks=[checkpointer, earlystopper],
+    validation_data=validation_generator,
+    validation_steps=500,
+    initial_epoch=initial_epoch)

@@ -101,7 +101,7 @@ earlystopper = EarlyStopping(monitor='val_categorical_accuracy',
                              patience=50,
                              mode='max',
                              restore_best_weights=True)
-model.fit_generator(
+model.fit(
         train_generator,
         steps_per_epoch=1000,
         epochs=10000,
