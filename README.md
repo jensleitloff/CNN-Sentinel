@@ -97,6 +97,7 @@ See also:
 * **Slides:** [Slides](slides/M3-2019_RieseLeitloff_SatelliteCV.pdf)
 * **Language:** German (Deutsch)
 * **Date:** 15 - 16 May 2019
+* **DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4056744.svg)](https://doi.org/10.5281/zenodo.4056744)
 * **URL:** [m3-konferenz.de](https://m3-konferenz.de/2019/)
 
 <details><summary>Abstract</summary>
@@ -119,6 +120,7 @@ See also:
 * **Video:** [youtube.com/watch?v=tKRoMcBeWjQ](https://www.youtube.com/watch?v=tKRoMcBeWjQ)
 * **Language:** English
 * **Date:** 24 - 28 October 2018
+* **DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4056516.svg)](https://doi.org/10.5281/zenodo.4056516)
 * **URL:** [de.pycon.org](https://de.pycon.org)
 
 <details><summary>Abstract</summary>
