@@ -25,7 +25,7 @@ with CNNs based on an open dataset
   pre-trained weights on ImageNet
 * `03_train_rgb_from_scratch.py`: train VGG16 or DenseNet201 from scratch using
   RGB data
-* `04_train_ms_finetuning.py`: train VGG16 or DenseNet201 using multisprectral
+* `04_train_ms_finetuning.py`: train VGG16 or DenseNet201 using multispectral
   data with pre-trained weights on ImageNet
 * `04_train_ms_finetuning_alternative.py`: an alternative way to train VGG16 or
   DenseNet201 using multisprectral data with pre-trained weights on ImageNet
