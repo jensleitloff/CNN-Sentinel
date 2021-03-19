@@ -54,7 +54,15 @@ We used:
 * scikit-image (0.14.1)
 * gdal (2.2.4) for `06_classify_image.py`
 
-## Setup Environment
+## Frequently asked questions (FAQs)
+
+* **How can I interpret the classification results?** - Please have a look at our answers
+  [#3](https://github.com/jensleitloff/CNN-Sentinel/issues/3),
+  [#4](https://github.com/jensleitloff/CNN-Sentinel/issues/4), and
+  [#6](https://github.com/jensleitloff/CNN-Sentinel/issues/6).
+* **Is there a paper I can cite for this repository?** - Please have a look at [Citation](#citation)
+
+## Setup environment
 
 Append conda-forge to your Anaconda channels:
 
