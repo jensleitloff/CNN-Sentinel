@@ -30,7 +30,7 @@ with CNNs based on an open dataset
 * `04_train_ms_finetuning_alternative.py`: an alternative way to train VGG16 or
   DenseNet201 using multispectral data with pre-trained weights on ImageNet
 * `05_train_ms_from_scratch.py`: train VGG16 or DenseNet201 from scratch using
-  multisprectral data
+  multispectral data
 * `06_classify_image.py`: a simple implementation to classify images with
   trained models
 * `image_functions.py`: functions for image normalization and a simple
